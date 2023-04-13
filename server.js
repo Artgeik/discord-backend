@@ -13,7 +13,7 @@ const socketServer = require('./socketServer');
 
 //express use these
 app.use(express.json());
-app.use(cors({origin:"https://master--charming-alfajores-89c050.netlify.app"}));
+app.use(cors({origin:"*"}));
 
 //register the routes
 app.use("/api/auth",authRoutes);

@@ -18,6 +18,9 @@ app.use(cors());
 //register the routes
 app.use("/api/auth",authRoutes);
 app.use("/api/friend-invitation",friendInvitationRoutes);
+app.get('/',(req,res)=>{
+    res.json({response:"link has been hit"});
+});
 
 //server setup
 const server= http.createServer(app);
